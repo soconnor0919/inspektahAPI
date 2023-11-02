@@ -14,10 +14,13 @@
 
 
 2. Sprint 2: 11/9 - 11/16
+
 // TODO: Weekly objective with commitments
 3. Sprint 3: 11/16 - 11/27
+
 // TODO: Weekly objective and claim responsibilities
 4. Sprint 4: 11/27 - 12/4
+
 // TODO: Weekly objective and claim duties
 
 ### Package Structure
