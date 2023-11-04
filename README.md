@@ -25,6 +25,20 @@
 
 // TODO: Weekly objective and claim duties
 
+
+### Useful Links / Citing Sources
+
+https://developer.ebay.com/develop/apis
+
+https://developer.ebay.com/develop/apis#buy-apis
+
+--> useful for Browser user, Buyer user, Data analyst user
+
+https://developer.ebay.com/Devzone/finding/CallRef/index.html
+
+--> getHistograms() will be useful for graphical analysis / GUI
+
+
 ### Package Structure
 // TODO: Complete Package Structure section
 ### 3rd Party Libraries
