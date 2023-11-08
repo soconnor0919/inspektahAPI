@@ -38,6 +38,12 @@ https://developer.ebay.com/Devzone/finding/CallRef/index.html
 
 --> getHistograms() will be useful for graphical analysis / GUI
 
+https://docs.aws.amazon.com/sdk-for-java/
+
+https://www.phind.com/
+
+--> AI pair programmer
+
 
 ### Package Structure
 // TODO: Complete Package Structure section
