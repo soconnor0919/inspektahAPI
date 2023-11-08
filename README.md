@@ -15,7 +15,7 @@
 
 2. Sprint 2: 11/9 - 11/16
 
---> aim to have a console-driven program finished by the end of Sprint 2 11/16. 
+--> aim to have a console-driven program finished by the end of Sprint 2 11/16. (extension agreed on by team due to complexities of statistical data constantly changing and the overall vastness of Amazon) 
 
 3. Sprint 3: 11/16 - 11/27
 
@@ -54,3 +54,5 @@ https://www.phind.com/
 // TODO: Complete video presentation, place link.
 
 Our video presentation can be found [here](https://drive.google.com).
+
+--> slidesgo.com (?)
