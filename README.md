@@ -15,7 +15,7 @@
 
 2. Sprint 2: 11/9 - 11/16
 
-// TODO: Weekly objective with commitments
+--> aim to have a console-driven program finished by the end of Sprint 2 11/16. 
 
 3. Sprint 3: 11/16 - 11/27
 
