@@ -8,10 +8,10 @@ import java.net.URL;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 
-public class EbaySearch {
+public class EbayAPI {
     public static void main(String[] args) {
         String url = "https://svcs.ebay.com/services/search/FindingService/v1";
-        String app_id = "YOUR_APP_ID_HERE";
+        String app_id = "Geoffery-InspectA-SBX-4ac5c5039-150ed70b";
 
         String query = "iphone";
         String responseFormat = "JSON";
