@@ -1,5 +1,6 @@
 /**This is Alec's attempt at accessing the Ebay Finding API
  * Oh lawdy here we go
+ * Getting return code of 500, working on debugging
 */
 
 import java.io.IOException;
