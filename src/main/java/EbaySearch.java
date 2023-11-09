@@ -8,7 +8,7 @@ import java.net.URL;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 
-public class EbayAPI {
+public class EbaySearch {
     public static void main(String[] args) {
         String url = "https://svcs.ebay.com/services/search/FindingService/v1";
         String app_id = "Geoffery-InspectA-SBX-4ac5c5039-150ed70b";
