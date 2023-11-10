@@ -40,9 +40,26 @@ https://developer.ebay.com/Devzone/finding/CallRef/index.html
 
 https://docs.aws.amazon.com/sdk-for-java/
 
+https://aws.amazon.com/what-is/restful-api/
+
+https://developer-docs.amazon.com/amazon-business/docs/what-are-amazon-business-apis
+
 https://www.phind.com/
 
 --> AI pair programmer
+
+https://stackshare.io/
+
+--> Amazon S3 was recommended to look into to gain API access
+
+
+### Future note to team
+
+--> Once API calling experience has been gained, as well as with additional APIs, we can look further into 'product price trackers' and possibly call their APIs, which may simplify a step or two in the GUI design/output process. 
+
+----> examples of product price trackers : Keepa, Camelcamelcamel, PriceSpy, Pricepin, PriceGrabber, etc.
+
+
 
 
 ### Package Structure
