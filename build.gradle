@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+group = 'org.team02'
+version = '1.0'
 
 repositories {
     mavenCentral()
@@ -12,6 +12,11 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'commons-codec:commons-codec:1.16.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'org.json:json:+'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
 }
 
 test {
