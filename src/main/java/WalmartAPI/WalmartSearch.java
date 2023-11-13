@@ -1,9 +1,10 @@
-package WalmartTest;
+package WalmartAPI;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import okhttp3.*;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -48,10 +49,28 @@ public class WalmartSearch {
         if (json.has("items")) {
             JSONArray items = json.getJSONArray("items");
 
-            // Print all items
+            // output JSON response to file
+             FileWriter file = new FileWriter("output.json");
+             file.write(json.toString());
+             file.close();
+
+            // Create all item objects using item class and add items to item array.
+            Item[] itemArray = new Item[items.length()];
             for (int i = 0; i < items.length(); i++) {
                 JSONObject item = items.getJSONObject(i);
-                System.out.println(item.getString("name") + ": " + item.getDouble("salePrice"));
+                itemArray[i] = new Item(
+                        item.getString("name"),
+                        item.getDouble("salePrice"),
+                        item.getString("thumbnailImage"),
+                        item.optDouble("customerRating", 0.0), // Use optDouble with a default value
+                        Integer.toString(item.getInt("itemId")),
+                        item.getString("categoryPath"),
+                        item.getString("shortDescription"));
+            }
+
+            // Print out all items
+            for (int i = 0; i < itemArray.length; i++) {
+                System.out.println(itemArray[i].toString());
             }
         } else {
             System.out.println("No items found for the given query.");

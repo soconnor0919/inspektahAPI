@@ -1,4 +1,4 @@
-package WalmartTest;
+package WalmartAPI;
 
 import org.apache.commons.codec.binary.Base64;
 
