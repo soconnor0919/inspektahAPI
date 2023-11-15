@@ -29,8 +29,24 @@ public class WalmartSearch {
         System.out.print("Enter a search query: ");
         String userQuery = scanner.nextLine();
 
+        // Ask the user for a sort type, selecting from the enum. Do not allow invalid input.
+        System.out.println("Select a sort type:");
+        for (SortType sortType : SortType.values()) {
+            System.out.println(sortType.name());
+        }
+        System.out.print("Enter a sort type: ");
+        // Do not allow invalid input.
+        SortType sortType = null;
+        while (sortType == null) {
+            try {
+                sortType = SortType.valueOf(scanner.nextLine().toUpperCase());
+            } catch (IllegalArgumentException e) {
+                System.out.print("Invalid sort type. Enter a sort type: ");
+            }
+        }
+
         // Build the URL with the user's query
-        String apiUrlWithQuery = WALMART_API_URL + "?query=" + userQuery;
+        String apiUrlWithQuery = WALMART_API_URL + "?query=" + userQuery + "&sort=" + sortType.getSortType() + "&format=json";
 
         // Create the request
         Request request = new Request.Builder()
@@ -50,9 +66,9 @@ public class WalmartSearch {
             JSONArray items = json.getJSONArray("items");
 
             // output JSON response to file
-             FileWriter file = new FileWriter("output.json");
-             file.write(json.toString());
-             file.close();
+            // FileWriter file = new FileWriter("output.json");
+            // file.write(json.toString());
+            // file.close();
 
             // Create all item objects using item class and add items to item array.
             Item[] itemArray = new Item[items.length()];
