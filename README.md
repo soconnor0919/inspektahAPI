@@ -52,6 +52,9 @@ https://stackshare.io/
 
 --> Amazon S3 was recommended to look into to gain API access
 
+https://lucid.app/lucidchart/a2c1e1a1-6a87-4d08-8168-c282b6d3de95/edit?invitationId=inv_703d117c-94f4-4511-a909-af77ac6b8175&page=0_0#
+
+--> link to UML design
 
 ### Future note to team
 
