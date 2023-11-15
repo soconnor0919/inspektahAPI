@@ -2,6 +2,7 @@ package WalmartAPI;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import okhttp3.Headers;
 import okhttp3.*;
 
 import java.io.FileWriter;

@@ -4,6 +4,7 @@ plugins {
     id 'idea'
     id 'org.javamodularity.moduleplugin' version '1.8.12'
     id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.0'
 }
 
 group = 'org.team02'
@@ -41,6 +42,14 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
 }
 
-test {
-    useJUnitPlatform()
+application {
+    mainModule = "csci205_final_project"
+    mainClassName = "WalmartAPI.WalmartSearch"
+
+    if (project.hasProperty("mainClass")) {
+        getMainClass().set(project.getProperty("mainClass"))
+    }
+    else {
+        getMainClass().set(mainClassName)
+    }
 }
