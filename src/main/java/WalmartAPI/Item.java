@@ -1,4 +1,4 @@
-package WalmartAPI;/* *****************************************
+/* *****************************************
  * CSCI 205 - Software Engineering and Design
  * Fall 2023
  * Instructor: Prof. Brian King
@@ -16,6 +16,8 @@ package WalmartAPI;/* *****************************************
  * Walmart API
  * ****************************************
  */
+
+package WalmartAPI;
 
 public class Item {
     /** The name of the item */
@@ -133,6 +135,14 @@ public class Item {
      */
     @Override
     public String toString() {
-        return "Name: " + name + "\nPrice: " + price + "\nURL: " + url + "\nImage URL: " + imageUrl + "\nRating: " + rating + "\nItem ID: " + itemId + "\nCategory: " + category + "\nDescription: " + description + "\n";
+        return "Name: " + name +
+                "\nPrice: " + price +
+                "\nURL: " + url +
+                "\nImage URL: " + imageUrl +
+                "\nRating: " + rating +
+                "\nItem ID: " + itemId +
+                "\nCategory: " + category +
+                "\nDescription: " + description +
+                "\n";
     }
 }
