@@ -54,6 +54,7 @@ public class WalmartSearch {
                 .headers(Headers.of(generator.getHeaders()))
                 .build();
 
+
         // Execute the request and get the response
         OkHttpClient client = new OkHttpClient();
         Response response = client.newCall(request).execute();

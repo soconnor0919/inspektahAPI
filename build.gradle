@@ -1,5 +1,9 @@
 plugins {
+    id 'application'
     id 'java'
+    id 'idea'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 group = 'org.team02'
@@ -7,6 +11,24 @@ version = '1.0'
 
 repositories {
     mavenCentral()
+}
+
+run {
+    standardInput = System.in
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed", "standard_out", "standard_error"
+    }
+}
+
+// Needs to be 17, ideally, it should match your JDK
+javafx {
+    version = "22-ea+11"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 dependencies {
