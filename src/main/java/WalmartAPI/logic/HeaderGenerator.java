@@ -1,4 +1,24 @@
-package WalmartAPI;
+/* *****************************************
+ * CSCI 205 - Software Engineering and Design
+ * Fall 2023
+ * Instructor: Prof. Brian King
+ *
+ * Names: O'Connor, Sean
+ *        Sanders, Alec
+ *        Gaines, Geoffrey
+ *        Finkler, Aidan
+ *
+ * Project: csci205_final_project
+ * Package: WalmartAPI.logic
+ * Class: HeaderGenerator
+ *
+ * Description:
+ * A class that generates the required headers
+ * for the Walmart API REST calls.
+ * ****************************************
+ */
+
+package WalmartAPI.logic;
 
 import org.apache.commons.codec.binary.Base64;
 
@@ -11,6 +31,10 @@ import java.security.PrivateKey;
 import java.security.Signature;
 import java.util.*;
 
+/**
+ * A class that generates the required headers
+ * for the Walmart API REST calls.
+ */
 public class HeaderGenerator {
     /**
      * HashMap containing the generated headers
