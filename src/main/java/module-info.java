@@ -5,5 +5,6 @@ module csci205_final_project {
     requires javafx.fxml;
     requires okhttp3;
     requires org.json;
-    exports GUI;
+    requires org.apache.commons.codec;
+    exports WalmartAPI;
 }

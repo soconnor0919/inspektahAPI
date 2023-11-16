@@ -3,21 +3,22 @@
  * Fall 2023
  * Instructor: Prof. Brian King
  *
- * Name: O'Connor, Sean
- * Section: 09:00
- * Date: 11/10/23
+ * Names: O'Connor, Sean
+ *        Sanders, Alec
+ *        Gaines, Geoffrey
+ *        Finkler, Aidan
  *
  * Project: csci205_final_project
- * Package: WalmartAPI
- * Class: WalmartAPI.SortType
+ * Package: WalmartAPI.model
+ * Class: SortType
  *
  * Description:
- * Indicates a sort type when searching the
- * walmart API
+ * A class that represents a sort type
+ * when searching the walmart API
  * ****************************************
  */
 
-package WalmartAPI;
+package WalmartAPI.model;
 
 // Indicates a sort type when searching the walmart API
 public enum SortType {
@@ -35,10 +36,11 @@ public enum SortType {
     NEW("new");
 
     // The sort type
-    private String sortType;
+    private final String sortType;
 
     /**
      * Create a new sort type
+     *
      * @param sortType
      */
     SortType(String sortType) {
@@ -47,6 +49,7 @@ public enum SortType {
 
     /**
      * Get the sort type
+     *
      * @return The sort type
      */
     public String getSortType() {
