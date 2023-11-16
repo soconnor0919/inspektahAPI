@@ -1,7 +1,8 @@
 /* styles.css */
 
 #sideBar {
-    -fx-background-color: lightgrey;
+    -fx-background-color: linear-gradient(to bottom, lightgray, lightslategrey);
+
     -fx-padding: 10;
     -fx-margin: 10; /* Add a margin */
 }

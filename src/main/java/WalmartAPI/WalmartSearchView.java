@@ -29,6 +29,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
 
@@ -65,7 +67,7 @@ public class WalmartSearchView extends Application {
      */
     @Override
     public void start(javafx.stage.Stage primaryStage) {
-        primaryStage.setTitle("Walmart Product Search");
+        primaryStage.setTitle("InspektahAPI");
 
         // Create GUI components
         createSearchBox();
@@ -99,16 +101,23 @@ public class WalmartSearchView extends Application {
     private HBox createTopBar() {
         HBox topBar = new HBox(10);
         topBar.setId("topBar"); // Set an ID for the top bar
-        topBar.setAlignment(Pos.CENTER);
+        topBar.setAlignment(Pos.CENTER_RIGHT);
         topBar.setPadding(new Insets(10));
 
-        // Set the width of the search button
-        searchButton.setMinWidth(80);
+        // Load the logo image
+        Image logoImage = new Image(getClass().getClassLoader().getResourceAsStream("images/logo.png"));
+
+        // Create ImageView with the logo image
+        ImageView logoImageView = new ImageView(logoImage);
+
+        // Set the size of the logo image
+        logoImageView.setFitWidth(170); // Adjust the width as needed
+        logoImageView.setFitHeight(55); // Adjust the height as needed
 
         // Allow the search box to grow to fill available width
         HBox.setHgrow(searchBox, Priority.ALWAYS);
 
-        topBar.getChildren().addAll(searchBox, searchButton);
+        topBar.getChildren().addAll(logoImageView, searchBox, searchButton);
 
         // Set the action when the search button is clicked
         searchButton.setOnAction(event -> {
@@ -200,7 +209,7 @@ public class WalmartSearchView extends Application {
      */
     private void createQuantityComboBox() {
         quantityComboBox = new ComboBox<>();
-        quantityComboBox.getItems().addAll(10, 20, 50, 100);
+        quantityComboBox.getItems().addAll(5, 10, 25);
         quantityComboBox.setValue(10);
     }
 

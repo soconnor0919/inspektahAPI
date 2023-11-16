@@ -29,6 +29,7 @@ import okhttp3.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -83,7 +84,7 @@ public class WalmartSearchModel {
                     itemArray[i] = new Item(
                             item.getString("name"),
                             item.getDouble("salePrice"),
-                            item.getString("thumbnailImage"),
+                            item.getString("mediumImage"),
                             item.optDouble("customerRating", 0.0),
                             Integer.toString(item.getInt("itemId")),
                             item.getString("categoryPath"),
