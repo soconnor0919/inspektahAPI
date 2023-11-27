@@ -29,6 +29,10 @@ Complete project deliverables and video
 
 ### Useful Links / Citing Sources
 
+project directions:
+
+--> https://drive.google.com/file/d/1DIUiP0JEG23LzgvWV09tY1uOjx7Vruxj/view
+
 https://developer.ebay.com/develop/apis
 
 https://developer.ebay.com/develop/apis#buy-apis
