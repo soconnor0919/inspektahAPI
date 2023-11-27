@@ -6,7 +6,8 @@
 - Geoffrey Gaines: Team Member
 - Aidan Finkler: Team Member
 ### Project Summary
-// TODO: Complete Project Summary section
+We created a program which connects to the Walmart API and allows the user to search their site for items.
+
 ### Sprint Dates
 1. Sprint 1: 11/2 - 11/9
 
@@ -15,15 +16,15 @@
 
 2. Sprint 2: 11/9 - 11/16
 
---> aim to have a console-driven program finished by the end of Sprint 2 11/16. (extension agreed on by team due to complexities of statistical data constantly changing and the overall vastness of Amazon) 
+Console-driven program completed early in the week, team plans on doing R&D over break
 
 3. Sprint 3: 11/16 - 11/27
 
-// TODO: Weekly objective and claim responsibilities
+The team completed Lab11. We logged 9 total hours in AIE code among the member.
 
 4. Sprint 4: 11/27 - 12/4
 
-// TODO: Weekly objective and claim duties
+Complete project deliverables and video
 
 
 ### Useful Links / Citing Sources
@@ -66,10 +67,31 @@ https://lucid.app/lucidchart/a2c1e1a1-6a87-4d08-8168-c282b6d3de95/edit?invitatio
 
 
 ### Package Structure
-// TODO: Complete Package Structure section
+Directories:
+WalmartAPI - Contains the Walmart API
+gui - 
+    Classes: ItemCard: holds JSON info about item retrieved from Walmart API
+logic - Contains MVC Programs for GUi
+    Classes:
+    HeaderGenerator - Formats info received from walmart API
+    WalmartSearchController - 
+    WalmartSearchModel -
+model -
+resources -
+
+Classes: 
+WalmartSearchView -
+
+
+
+
+
 ### 3rd Party Libraries
 // TODO: Place links, finish 3rd Party Libraries section
 - JavaFX: Version x.x.x. Can be found [here](https://oracle.com)
+
+
+
 ### Video Presentation
 // TODO: Complete video presentation, place link.
 
