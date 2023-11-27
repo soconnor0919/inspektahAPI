@@ -87,10 +87,11 @@ WalmartSearchView -
 
 
 ### 3rd Party Libraries
-// TODO: Place links, finish 3rd Party Libraries section
-- JavaFX: Version x.x.x. Can be found [here](https://oracle.com)
-
-
+- JavaFX: Version 22-ea+16. Can be found [here](https://mvnrepository.com/artifact/org.openjfx/javafx)
+- Apache Commons Codec: Version 1.16.0. Can be found [here](https://mvnrepository.com/artifact/commons-codec/commons-codec)
+- JSON: Version 20231013. Can be found [here](https://mvnrepository.com/artifact/org.json/json)
+- JUnit Jupiter API: Version 5.9.1. Can be found [here](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
+- OkHttp3: Version 4.12.0. Can be found [here](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp)
 
 ### Video Presentation
 // TODO: Complete video presentation, place link.
