@@ -68,19 +68,21 @@ https://lucid.app/lucidchart/a2c1e1a1-6a87-4d08-8168-c282b6d3de95/edit?invitatio
 
 ### Package Structure
 Directories:
-WalmartAPI - Contains the Walmart API
+WalmartAPI - Contains the customer key and private key needed to access the Walmart API
+WalmartSearchView - GUI for the application
 gui - 
     Classes: ItemCard: holds JSON info about item retrieved from Walmart API
 logic - Contains MVC Programs for GUi
     Classes:
     HeaderGenerator - Formats info received from walmart API
-    WalmartSearchController - 
-    WalmartSearchModel -
+    WalmartSearchController - Perform the search or throw an exception
+    WalmartSearchModel - Specify the JSON format for the retrieved items, add items to the list
 model -
-resources -
-
-Classes: 
-WalmartSearchView -
+    Classes:
+    Item - Fields, getters, setters for the item
+    RatingStars - Creates a star rating for the item
+    SortType - Specify a customer sorting type (price, best seller, etc.)
+resources - CSS Stylesheet, graphics images, Walmart API folder
 
 
 
