@@ -41,7 +41,7 @@ public class WalmartSearchModel {
     private HeaderGenerator headerGenerator;
 
     /**
-     * Constructor.
+     * Constructor
      */
     public WalmartSearchModel() {
         try {

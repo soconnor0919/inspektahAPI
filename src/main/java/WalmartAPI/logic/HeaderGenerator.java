@@ -41,6 +41,12 @@ public class HeaderGenerator {
      */
     private final Map<String, String> map;
 
+    /**
+     * Constructor for HeaderGenerator.
+     * Generates the headers and stores them in a HashMap.
+     *
+     * @throws IOException if there is an error reading the required files
+     */
     public HeaderGenerator() throws IOException {
         this.map = new HashMap<>();
         generateHeaders(map);
