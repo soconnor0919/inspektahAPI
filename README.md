@@ -20,7 +20,7 @@ Console-driven program completed early in the week, team plans on doing R&D over
 
 3. Sprint 3: 11/16 - 11/27
 
-The team completed Lab11. We logged 9 total hours in AIE code among the member.
+The team completed Lab11. We logged 9 total hours in AIE code among the members.
 
 4. Sprint 4: 11/27 - 12/4
 
