@@ -177,7 +177,7 @@ public class WalmartSearchView extends Application {
         // Show placeholder label initially
         centerPane.setCenter(placeholderLabel);
 
-        return centerPane; 
+        return centerPane;
     }
 
     /**
