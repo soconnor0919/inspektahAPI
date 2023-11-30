@@ -7,6 +7,11 @@
 - Aidan Finkler: Team Member
 ### Project Summary
 We created a program which connects to the Walmart API and allows the user to search their site for items.
+Our Program provides a GUI with which the user can access the Walmart API and search for items.
+The user can then sort the items by price, rating, or best seller. We originally planned to use the Ebay API, as well as Amazon,
+but we were unable to access them. Most retail APIs, as it turns out, are difficult to access and use for free.
+
+
 
 ### Sprint Dates
 1. Sprint 1: 11/2 - 11/9
