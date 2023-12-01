@@ -33,7 +33,7 @@ public class RatingStars extends HBox {
      * @param rating The rating of the item
      */
     public RatingStars(double rating) {
-        // Assuming you have the PNG files in the "/images" directory
+        // PNG files are in the "/images" directory
         String basePath = "/images/";
 
         // Create an HBox to contain the star images

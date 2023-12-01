@@ -82,7 +82,7 @@ public class HeaderGenerator {
      * @return string containing file content
      * @author sso005
      */
-    private static String readFileFromResources(String fileName) {
+    public String readFileFromResources(String fileName) {
         // Use the class loader to get the resource stream
         try (InputStream inputStream = HeaderGenerator.class.getResourceAsStream(fileName)) {
             if (inputStream == null) {
@@ -107,7 +107,7 @@ public class HeaderGenerator {
      * @return trimmed private key
      * @author sso005
      */
-    private static String extractPrivateKey(String input) {
+    public String extractPrivateKey(String input) {
         // Find the indices of the begin and end markers
         int beginIndex = input.indexOf("-----BEGIN PRIVATE KEY-----");
         int endIndex = input.indexOf("-----END PRIVATE KEY-----");
@@ -159,9 +159,7 @@ public class HeaderGenerator {
      * @throws Exception if there is an error generating the signature
      * @author Walmart API Developers
      */
-    public String generateSignature(String key, String stringToSign)
-
-            throws Exception {
+    public String generateSignature(String key, String stringToSign) throws Exception {
         Signature signatureInstance = Signature.getInstance("SHA256WithRSA");
 
         ServiceKeyRep keyRep = new ServiceKeyRep(KeyRep.Type.PRIVATE, "RSA", "PKCS#8", Base64.decodeBase64(key));
