@@ -73,6 +73,7 @@ public class WalmartSearchModel {
         // Execute the request and get the response
         try (Response response = new OkHttpClient().newCall(request).execute()) {
             // Parse the response JSON
+            assert response.body() != null;
             JSONObject json = new JSONObject(response.body().string());
 
             if (json.has("items")) {

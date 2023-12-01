@@ -25,6 +25,7 @@ import org.apache.commons.codec.binary.Base64;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectStreamException;
+import java.io.Serial;
 import java.nio.charset.StandardCharsets;
 import java.security.KeyRep;
 import java.security.PrivateKey;
@@ -141,12 +142,12 @@ public class HeaderGenerator {
 
         String[] array = canonicalize(map);
 
-        String data = null;
+        String data;
 
         try {
             data = generateSignature(key, array[1]);
             map.put("WM_SEC.AUTH_SIGNATURE", data);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
     }
 
@@ -194,8 +195,9 @@ public class HeaderGenerator {
      * @author Walmart API Developers
      * @see KeyRep
      */
-    public class ServiceKeyRep extends KeyRep {
+    public static class ServiceKeyRep extends KeyRep {
 
+        @Serial
         private static final long serialVersionUID = -7213340660431987616L;
 
         /**
@@ -218,6 +220,7 @@ public class HeaderGenerator {
          * @throws ObjectStreamException if there is an error resolving the key object
          * @author Walmart API Developers
          */
+        @Serial
         protected Object readResolve() throws ObjectStreamException {
             return super.readResolve();
         }

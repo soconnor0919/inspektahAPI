@@ -24,6 +24,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 
+import java.util.Objects;
+
 /**
  * Creates a rating star object that displays the rating of an item
  */
@@ -42,11 +44,11 @@ public class RatingStars extends HBox {
 
             // Determine the state of the star based on the rating
             if (rating >= i + 1) {
-                star = new ImageView(new Image(getClass().getResource(basePath + "star-fill.png").toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star-fill.png")).toExternalForm()));
             } else if (rating > i) {
-                star = new ImageView(new Image(getClass().getResource(basePath + "star-half.png").toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star-half.png")).toExternalForm()));
             } else {
-                star = new ImageView(new Image(getClass().getResource(basePath + "star.png").toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star.png")).toExternalForm()));
             }
 
             star.setFitWidth(15); // Set the star width
