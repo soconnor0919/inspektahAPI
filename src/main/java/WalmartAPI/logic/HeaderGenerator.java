@@ -130,8 +130,8 @@ public class HeaderGenerator {
      * @param map HashMap to store headers in
      */
     public void generateHeaders(Map<String, String> map) throws IOException {
-        String consumerId = readFileFromResources("/walmart-api/consumer-id");
-        String key = extractPrivateKey(readFileFromResources("/walmart-api/private-key.pem"));
+        String consumerId = readFileFromResources("/WalmartAPI/keys/consumer-id");
+        String key = extractPrivateKey(readFileFromResources("/WalmartAPI/keys/private-key.pem"));
         String privateKeyVersion = "1";
 
         long intimestamp = System.currentTimeMillis();

@@ -88,7 +88,7 @@ public class WalmartSearchView extends Application {
         Scene scene = new Scene(root, 800, 600);
 
         // Load the CSS file from the resources folder
-        scene.getStylesheets().add(Objects.requireNonNull(getClass().getClassLoader().getResource("css/styles.css")).toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("css/styles.css")).toExternalForm());
 
 
         primaryStage.setScene(scene);
@@ -106,7 +106,7 @@ public class WalmartSearchView extends Application {
         topBar.setPadding(new Insets(10));
 
         // Load the logo image
-        Image logoImage = new Image(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("images/logo.png")));
+        Image logoImage = new Image(getClass().getResourceAsStream("images/logo.png"));
 
         // Create ImageView with the logo image
         ImageView logoImageView = new ImageView(logoImage);

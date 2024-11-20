@@ -42,7 +42,7 @@ dependencies {
 
 application {
     mainModule = "csci205_final_project"
-    mainClassName = "WalmartAPI.WalmartSearch"
+    mainClassName = "WalmartAPI.WalmartSearchView"
 
     if (project.hasProperty("mainClass")) {
         getMainClass().set(project.getProperty("mainClass"))

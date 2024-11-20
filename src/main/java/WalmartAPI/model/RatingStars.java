@@ -35,20 +35,17 @@ public class RatingStars extends HBox {
      * @param rating The rating of the item
      */
     public RatingStars(double rating) {
-        // PNG files are in the "/images" directory
-        String basePath = "/images/";
-
         // Create an HBox to contain the star images
         for (int i = 0; i < 5; i++) {
             ImageView star;
 
             // Determine the state of the star based on the rating
             if (rating >= i + 1) {
-                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star-fill.png")).toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource("images/star-fill.png")).toExternalForm()));
             } else if (rating > i) {
-                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star-half.png")).toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource("images/star-half.png")).toExternalForm()));
             } else {
-                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource(basePath + "star.png")).toExternalForm()));
+                star = new ImageView(new Image(Objects.requireNonNull(getClass().getResource("images/star.png")).toExternalForm()));
             }
 
             star.setFitWidth(15); // Set the star width
