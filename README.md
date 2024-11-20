@@ -28,12 +28,19 @@ A Java-based desktop application that connects to the Walmart API, allowing user
 
 2. Ensure you have Java 17+ installed
 
-3. Build the project:
+3. Set up API keys:
+   - Create directory: `src/main/resources/WalmartAPI/keys/`
+   - Create two files in this directory:
+     - `private-key.pem`: Your Walmart API private key
+     - `consumer-id`: Your Walmart API consumer ID
+   These files are gitignored for security. Contact project maintainers for development keys.
+
+4. Build the project:
    ```bash
    ./gradlew build
    ```
 
-4. Run the application:
+5. Run the application:
    ```bash
    ./gradlew run
    ```
