@@ -1,83 +1,78 @@
-# CSCI 205 Final Project
-## Team 02, Spring 2023
-### Scrum Roles (Rotating):
-- Sean O'Connor: Scrum Master
-- Alec Sanders: Project Owner
-- Geoffrey Gaines: Team Member
-- Aidan Finkler: Team Member
-### Project Summary
-We created a program which connects to the Walmart API and allows the user to search their site for items.
-Our Program provides a GUI with which the user can access the Walmart API and search for items.
-The user can then sort the items by price, rating, or best seller. We originally planned to use the Ebay API, as well as Amazon,
-but we were unable to access them. Most retail APIs, as it turns out, are difficult to access and use for free.
+# InspektahAPI - Walmart Product Search Application
 
+A Java-based desktop application that connects to the Walmart API, allowing users to search and sort products through an intuitive graphical interface.
 
+## Features
 
-### Sprint Dates
-1. Sprint 1: 11/2 - 11/9
+- Real-time product search through Walmart's API
+- Customizable sorting options (price, rating, bestseller)
+- Responsive GUI with product cards displaying images and details
+- Star rating visualization system
+- Adjustable search result quantities
 
---> by the end of sprint one, we plan on having an output that returns the cheapest ten products of given website to the console based on user's search input/request
+## Tech Stack
 
+- [Java](https://www.java.com/) - Core programming language
+- [JavaFX](https://openjfx.io/) - GUI framework (Version 22-ea+16)
+- [Gradle](https://gradle.org/) - Build automation tool
+- [JUnit](https://junit.org/) - Testing framework
+- [OkHttp](https://square.github.io/okhttp/) - HTTP client
+- [JSON](https://www.json.org/) - Data interchange format
 
-2. Sprint 2: 11/9 - 11/16
+## Getting Started
 
-Console-driven program completed early in the week, team plans on doing R&D over break
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/team02/walmart-search.git
+   ```
 
-3. Sprint 3: 11/16 - 11/27
+2. Ensure you have Java 17+ installed
 
-The team completed Lab11. We logged 9 total hours in AIE code among the members.
+3. Build the project:
+   ```bash
+   ./gradlew build
+   ```
 
-4. Sprint 4: 11/27 - 12/4
+4. Run the application:
+   ```bash
+   ./gradlew run
+   ```
 
-Complete project deliverables and video
+## Project Structure
 
-### Package Structure
-Directories:
+```
+src/
+├── main/
+│   ├── java/WalmartAPI/
+│   │   ├── gui/          # GUI components
+│   │   ├── logic/        # Business logic and API handling
+│   │   └── model/        # Data models
+│   └── resources/        # Assets and configuration files
+└── test/                 # Test files
+```
 
-WalmartAPI - Contains the customer key and private key needed to access the Walmart API
+## Dependencies
 
-WalmartSearchView - GUI for the application
+- JavaFX: Version 22-ea+16 - [Download](https://mvnrepository.com/artifact/org.openjfx/javafx)
+- Apache Commons Codec: Version 1.16.0 - [Download](https://mvnrepository.com/artifact/commons-codec/commons-codec)
+- JSON: Version 20231013 - [Download](https://mvnrepository.com/artifact/org.json/json)
+- JUnit Jupiter API: Version 5.9.1 - [Download](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
+- OkHttp3: Version 4.12.0 - [Download](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp)
 
-gui - 
+## Team
 
-    Classes: ItemCard: holds JSON info about item retrieved from Walmart API
+- Sean O'Connor - Scrum Master
+- Alec Sanders - Project Owner
+- Geoffrey Gaines - Team Member
+- Aidan Finkler - Team Member
 
-logic - Contains MVC Programs for GUi
+## Development Timeline
 
-    Classes:
+- Sprint 1 (11/2 - 11/9): Initial console-based product search implementation
+- Sprint 2 (11/9 - 11/16): Core functionality and R&D
+- Sprint 3 (11/16 - 11/27): GUI development and integration
+- Sprint 4 (11/27 - 12/4): Final deliverables and documentation
 
-    HeaderGenerator - Formats info received from walmart API
+## License
 
-    WalmartSearchController - Perform the search or throw an exception
-
-    WalmartSearchModel - Specify the JSON format for the retrieved items, add items to the list
-
-model -
-
-    Classes:
-
-    Item - Fields, getters, setters for the item
-
-    RatingStars - Creates a star rating for the item
-
-    SortType - Specify a customer sorting type (price, best seller, etc.)
-    
-resources - CSS Stylesheet, graphics images, Walmart API folder
-
-
-
-
-
-### 3rd Party Libraries
-- JavaFX: Version 22-ea+16. Can be found [here](https://mvnrepository.com/artifact/org.openjfx/javafx)
-- Apache Commons Codec: Version 1.16.0. Can be found [here](https://mvnrepository.com/artifact/commons-codec/commons-codec)
-- JSON: Version 20231013. Can be found [here](https://mvnrepository.com/artifact/org.json/json)
-- JUnit Jupiter API: Version 5.9.1. Can be found [here](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
-- OkHttp3: Version 4.12.0. Can be found [here](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp)
-
-### Video Presentation
-// TODO: Complete video presentation, place link.
-
-Our video presentation can be found [here](https://drive.google.com).
-
---> slidesgo.com (?)
+This project is part of CSCI 205 - Software Engineering and Design, Fall 2023, under Prof. Brian King.
