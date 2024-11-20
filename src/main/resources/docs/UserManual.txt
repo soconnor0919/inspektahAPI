@@ -1,3 +1,0 @@
-Problem being solved:
-Users need an interface to use to search for items online. We provide an API service called Inspekta API.
-Users can search for an item as in a regular retail site - including the ability to filter by price, seller, etc.
