@@ -67,7 +67,7 @@ public class WalmartSearchView extends Application {
      * Override the start method from Application.
      */
     @Override
-    public void start(javafx.stage.Stage primaryStage) {
+    public void start(@SuppressWarnings("exports") javafx.stage.Stage primaryStage) {
         primaryStage.setTitle("InspektahAPI");
 
         // Create GUI components
