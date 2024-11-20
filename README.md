@@ -21,12 +21,12 @@ A Java-based desktop application that connects to the Walmart API, allowing user
 
 ## Getting Started
 
-1. Clone the repository:
+1. Ensure you have Java 17+ installed with a corresponding JDK and JavaFX SDK, and set up your PATH environment variable to include the Java executable.
+
+2. Clone the repository:
    ```bash
    git clone https://github.com/team02/walmart-search.git
    ```
-
-2. Ensure you have Java 17+ installed
 
 3. Set up API keys:
    - Create directory: `src/main/resources/WalmartAPI/keys/`
