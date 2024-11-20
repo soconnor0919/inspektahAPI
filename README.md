@@ -33,6 +33,7 @@ A Java-based desktop application that connects to the Walmart API, allowing user
    - Create two files in this directory:
      - `private-key.pem`: Your Walmart API private key
      - `consumer-id`: Your Walmart API consumer ID
+
    These files are gitignored for security. Contact project maintainers for development keys.
 
 4. Build the project:
